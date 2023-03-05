@@ -1,0 +1,13 @@
+{
+  "name": "Google Meet Recording Alert",
+  "version": "1.0",
+  "description": "Displays a pop-up alert when a Google Meet call starts to indicate that recording will begin automatically.",
+  "author": "@maikeg-alves",
+  "manifest_version": 3,
+  "permissions": ["tabs", "notifications"],
+  "content_scripts": [{
+    "matches": ["https://meet.google.com/*"],
+    "js": ["content-script.js"],
+    "css": ["style.css"]
+  }]
+}
